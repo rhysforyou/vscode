@@ -132,13 +132,99 @@ const config = {
 	darwinApplicationCategoryType: 'public.app-category.developer-tools',
 	darwinHelpBookFolder: 'VS Code HelpBook',
 	darwinHelpBookName: 'VS Code HelpBook',
-	darwinBundleDocumentTypes: [{
-		name: product.nameLong + ' document',
-		role: 'Editor',
-		ostypes: ["TEXT", "utxt", "TUTX", "****"],
-		extensions: ["ascx", "asp", "aspx", "bash", "bash_login", "bash_logout", "bash_profile", "bashrc", "bat", "bowerrc", "c", "cc", "clj", "cljs", "cljx", "clojure", "cmd", "code-workspace", "coffee", "config", "cpp", "cs", "cshtml", "csproj", "css", "csx", "ctp", "cxx", "dockerfile", "dot", "dtd", "editorconfig", "edn", "eyaml", "eyml", "fs", "fsi", "fsscript", "fsx", "gemspec", "gitattributes", "gitconfig", "gitignore", "go", "h", "handlebars", "hbs", "hh", "hpp", "htm", "html", "hxx", "ini", "jade", "jav", "java", "js", "jscsrc", "jshintrc", "jshtm", "json", "jsp", "less", "lua", "m", "makefile", "markdown", "md", "mdoc", "mdown", "mdtext", "mdtxt", "mdwn", "mkd", "mkdn", "ml", "mli", "php", "phtml", "pl", "pl6", "pm", "pm6", "pod", "pp", "profile", "properties", "ps1", "psd1", "psgi", "psm1", "pug", "py", "r", "rb", "rhistory", "rprofile", "rs", "rt", "scss", "sh", "shtml", "sql", "svg", "svgz", "t", "ts", "txt", "vb", "wxi", "wxl", "wxs", "xaml", "xcodeproj", "xcworkspace", "xml", "yaml", "yml", "zlogin", "zlogout", "zprofile", "zsh", "zshenv", "zshrc"],
-		iconFile: 'resources/darwin/code_file.icns'
-	}],
+	darwinBundleDocumentTypes: [
+		{
+			name: product.nameLong + ' document',
+			role: 'Editor',
+			ostypes: ["TEXT", "utxt", "TUTX", "****"],
+			extensions: ["cmd", "code-workspace", "coffee", "config", "cpp", "cs", "cshtml", "csproj", "css", "csx", "ctp", "cxx", "dockerfile", "dot", "dtd", "editorconfig", "edn", "eyaml", "eyml", "fs", "fsi", "fsscript", "fsx", "gemspec", "gitattributes", "gitconfig", "gitignore", "go", "h", "handlebars", "hbs", "hh", "hpp", "htm", "html", "hxx", "ini", "jade", "jav", "java", "js", "jscsrc", "jshintrc", "jshtm", "json", "jsp", "less", "lua", "m", "makefile", "ml", "mli", "php", "phtml", "pl", "pl6", "pm", "pm6", "pod", "pp", "profile", "properties", "ps1", "psd1", "psgi", "psm1", "pug", "py", "r", "rb", "rhistory", "rprofile", "rs", "rt", "scss", "sh", "shtml", "sql", "svg", "svgz", "t", "ts", "txt", "vb", "wxi", "wxl", "wxs", "xaml", "xcodeproj", "xcworkspace", "xml", "yaml", "yml", "zlogin", "zlogout", "zprofile", "zsh", "zshenv", "zshrc"],
+			iconFile: 'resources/darwin/code_file.icns'
+		},
+		{
+			name: 'Active Server Page file',
+			role: 'Editor',
+			ostypes: ["TEXT", "utxt", "TUTX", "****"],
+			extensions: ["asp"],
+			iconFile: 'resources/darwin/code_file.icns'
+		},
+		{
+			name: 'Active Server Page Extended file',
+			role: 'Editor',
+			ostypes: ["TEXT", "utxt", "TUTX", "****"],
+			extensions: ["aspx"],
+			iconFile: 'resources/darwin/code_file.icns'
+		},
+		{
+			name: 'ASP.NET web user control file',
+			role: 'Editor',
+			ostypes: ["TEXT", "utxt", "TUTX", "****"],
+			extensions: ["ascx"],
+			iconFile: 'resources/darwin/code_file.icns'
+		},
+		{
+			name: 'Bourne-Again Shell script',
+			role: 'Editor',
+			ostypes: ["TEXT", "utxt", "TUTX", "****"],
+			extensions: ["bash", "bash_login", "bash_logout", "bash_profile", "bashrc"],
+			iconFile: 'resources/darwin/code_file.icns'
+		},
+		{
+			name: 'Batch script',
+			role: 'Editor',
+			ostypes: ["TEXT", "utxt", "TUTX", "****"],
+			extensions: ["batch"],
+			iconFile: 'resources/darwin/code_file.icns'
+		},
+		{
+			name: 'Bower configuration file',
+			role: 'Editor',
+			ostypes: ["TEXT", "utxt", "TUTX", "****"],
+			extensions: ["bowerrc"],
+			iconFile: 'resources/darwin/code_file.icns'
+		},
+		{
+			name: 'C source',
+			role: 'Editor',
+			ostypes: ["TEXT", "utxt", "TUTX", "****"],
+			extensions: ["c"],
+			iconFile: 'resources/darwin/code_file.icns'
+		},
+		{
+			name: 'C++ source',
+			role: 'Editor',
+			ostypes: ["TEXT", "utxt", "TUTX", "****"],
+			extensions: ["cc", "c++"],
+			iconFile: 'resources/darwin/code_file.icns'
+		},
+		{
+			name: 'Clojure source',
+			role: 'Editor',
+			ostypes: ["TEXT", "utxt", "TUTX", "****"],
+			extensions: ["clj", "clojure"],
+			iconFile: 'resources/darwin/code_file.icns'
+		},
+		{
+			name: 'ClojureScript source',
+			role: 'Editor',
+			ostypes: ["TEXT", "utxt", "TUTX", "****"],
+			extensions: ["cljs"],
+			iconFile: 'resources/darwin/code_file.icns'
+		},
+		{
+			name: 'Portable Clojure source',
+			role: 'Editor',
+			ostypes: ["TEXT", "utxt", "TUTX", "****"],
+			extensions: ["cljx"],
+			iconFile: 'resources/darwin/code_file.icns'
+		},
+		{
+			name: 'Markdown document',
+			role: 'Editor',
+			ostypes: ["TEXT", "utxt", "TUTX", "****"],
+			extensions: ["markdown", "md", "mdoc", "mdown", "mdtext", "mdtxt", "mdwn", "mkd", "mkdn"],
+			iconFile: 'resources/darwin/code_file.icns'
+		},
+	],
 	darwinBundleURLTypes: [{
 		role: 'Viewer',
 		name: product.nameLong,
